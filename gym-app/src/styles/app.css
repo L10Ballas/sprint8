@@ -1,0 +1,247 @@
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Alinha os links à esquerda e ícones à direita */
+  background-color: #c62828; /* Vermelho Escuro */
+  padding: 10px 20px; /* Adiciona um padding lateral */
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links de navegação */
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a i {
+  margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.notifications-link i,
+.profile-link i {
+  margin-right: 5px;
+}
+
+/* Efeito hover no container */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho */
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Estilos do formulário */
+.login-form,
+.contact-form,
+.rating-form,
+.academia-form,
+.planos-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input de formulários */
+.login-form input,
+.contact-form input,
+.contact-form textarea,
+.rating-form textarea,
+.academia-form input,
+.planos-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Input com foco */
+.login-form input:focus,
+.contact-form input:focus,
+.contact-form textarea:focus,
+.rating-form textarea:focus,
+.academia-form input:focus,
+.planos-form input:focus {
+  border-color: #c62828; /* Vermelho Escuro */
+}
+
+/* Estilos do botão */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #c62828; /* Vermelho Escuro */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #b71c1c; /* Vermelho mais Escuro */
+}
+
+/* Estilos da lista de academias e planos */
+.academia-list,
+.planos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.academia-list li,
+.planos-list li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.academia-list h2,
+.planos-list h2 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.academia-list p,
+.planos-list p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Estilos do formulário de equipamentos e funcionários */
+.form-container {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+}
+
+.equipamentos-list,
+.funcionarios-list {
+  margin-top: 20px;
+}
+
+.equipamentos-list ul,
+.funcionarios-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.equipamentos-list li,
+.funcionarios-list li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.equipamentos-list h3,
+.funcionarios-list h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.equipamentos-list p,
+.funcionarios-list p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Estilos das notificações */
+.notifications-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notifications-list li {
+  background-color: #ffebee; /* Vermelho Claro */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #c62828; /* Vermelho Escuro */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.notifications-list li i {
+  margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Ícones de notificação e perfil */
+.navbar a.notifications-link i.fa-bell {
+  color: white; /* Ícone do sino */
+}
+
+.navbar a.profile-link i.fa-user {
+  color: white; /* Ícone do perfil */
+}
+
+.rating span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #333;
+}
